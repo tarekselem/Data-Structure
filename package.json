@@ -1,0 +1,7 @@
+{
+    "name": "Data Strucure Practices",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsc && node dist/main.js"   
+  }
+}
