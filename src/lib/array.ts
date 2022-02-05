@@ -29,5 +29,7 @@ export class ArrayData<T> {
     if (this._currentIndex < this._maxIndex) this._currentIndex++;
   }
 
-  printe() {}
+  print() {
+    for (let i = 0; i < this._data.length; i++) console.log(this._data[i]);
+  }
 }
