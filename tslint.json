@@ -1,0 +1,37 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": ".",
+      "declaration": false,
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": false,
+      "experimentalDecorators": true,
+      "forceConsistentCasingInFileNames": true,
+      "importHelpers": true,
+      "lib": ["dom", "es2017"],
+      "module": "es2020",
+      "moduleResolution": "node",
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitAny": false,
+      "noImplicitReturns": false,
+      "noImplicitThis": false,
+      "noImplicitUseStrict": false,
+      "paths": {
+        "cldr": ["node_modules/cldrjs/dist/cldr"],
+        "cldr/*": ["node_modules/cldrjs/dist/cldr/*"],
+        "globalize": ["node_modules/globalize/dist/globalize"],
+        "globalize/*": ["node_modules/globalize/dist/globalize/*"]
+      },
+      "skipDefaultLibCheck": true,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "strict": false,
+      "strictNullChecks": false,
+      "strictPropertyInitialization": false,
+      "target": "es6",
+      "types": ["node", "jest"],
+      "typeRoots": ["node_modules/@types"]
+    },
+    "exclude": ["dist", "node_modules", "tmp"]
+  }
