@@ -29,4 +29,12 @@ export class ArrayData<T> {
   print() {
     for (let i = 0; i <= this._currentIndex; i++) console.log(this._data[i]);
   }
+
+  indexOf(item: T): number {
+    for (let i = 0; i < this._currentIndex; i++) {
+      if (this._data[i] === item) return i;
+    }
+
+    return -1;
+  }
 }

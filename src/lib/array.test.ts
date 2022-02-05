@@ -9,6 +9,7 @@ export class ArrayDataTests {
     console.log('running ArrayData tests...');
     this.testArrayLength();
     this.testInsert();
+    this.testIndexOf();
   }
 
   private testArrayLength() {
@@ -32,5 +33,18 @@ export class ArrayDataTests {
 
     // Assert
     console.assert(data.size() === 1, '=>faild: testArrayInsert');
+  }
+
+  private testIndexOf() {
+    // Arrange
+    const data = new ArrayData<Number>(3);
+    data.insert(11);
+    data.insert(12);
+    data.insert(13);
+
+    // Act
+    const result = data.indexOf(12);
+    // Assert
+    console.assert(result === 1, '=>faild: testArrayIndexOf');
   }
 }
