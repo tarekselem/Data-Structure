@@ -1,6 +1,3 @@
-// removeAt()
-// indexOf()
-
 export class ArrayData<T> {
   constructor(private length: number) {
     this._length = length;
@@ -36,5 +33,18 @@ export class ArrayData<T> {
     }
 
     return -1;
+  }
+
+  removeAt(index: number) {
+    if (index > this._maxIndex) throw 'invalid index!';
+
+    this._data[index] = undefined;
+
+    const requiresSorting = index < this._currentIndex;
+    if (requiresSorting) {
+      for (let i = index; i <= this._currentIndex; i++) {
+        this._data[i] = this._data[i + 1];
+      }
+    }
   }
 }
