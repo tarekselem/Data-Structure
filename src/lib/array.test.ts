@@ -10,6 +10,7 @@ export class ArrayDataTests {
     this.testArrayLength();
     this.testInsert();
     this.testIndexOf();
+    this.testRemoveAt();
   }
 
   private testArrayLength() {
@@ -46,5 +47,20 @@ export class ArrayDataTests {
     const result = data.indexOf(12);
     // Assert
     console.assert(result === 1, '=>faild: testArrayIndexOf');
+  }
+
+  //TODO: extend with more test cases
+  private testRemoveAt() {
+    // Arrange
+    const data = new ArrayData<Number>(3);
+    data.insert(11);
+    data.insert(12);
+    data.insert(13);
+
+    // Act
+    data.removeAt(1);
+
+    // Assert
+    console.assert(data.indexOf(13) === 1, '=>faild: testRemoveAt');
   }
 }
