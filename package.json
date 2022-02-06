@@ -1,8 +1,8 @@
 {
-    "name": "Data Strucure Practices",
+    "name": "data-strucure-practices",
   "version": "1.0.0",
   "scripts": {
     "start": "tsc && node dist/main.js",   
     "test": "tsc && node dist/test.js"   
-  }
+  } 
 }
