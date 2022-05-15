@@ -1,4 +1,6 @@
-import { Sort } from './lib';
+import { Sorter, StringUtils } from './lib';
 
-const arr = [5, 3, 7, 2];
-console.log(Sort.asBubble(arr));
+let arr = [8, 3, 2, 4, 1];
+const word = '  hello  world! ';
+// console.log(StringUtils.isPalinrome('axbcba'));
+console.log(Sorter.asInsertion(arr));
