@@ -1,6 +1,24 @@
-import { Search, StringUtils } from './lib';
+import {
+  isIsomorphic,
+  isPalindrome,
+  isValidSubsequence,
+  numIslands,
+  sortedSquaredArray,
+  tournamentWinner,
+  transposeMatrix,
+  twoNumberSum
+} from './lib/algorithms';
+import { BST, findClosestValueInBst } from './lib/data';
 
-let arr = [8, 3, 2, 4, 1];
-const word = '  hello  world! ';
-console.log(StringUtils.getNumberOfTanx('-H-HH--'));
-// console.log(Search.binary(arr, 4));
+let tree: BST = new BST(10);
+tree.left = new BST(11);
+tree.right = new BST(9);
+
+console.log(
+  numIslands([
+    ['1', '1', '0', '0', '0'],
+    ['1', '1', '0', '0', '0'],
+    ['0', '0', '1', '0', '0'],
+    ['0', '0', '0', '1', '1']
+  ])
+);
